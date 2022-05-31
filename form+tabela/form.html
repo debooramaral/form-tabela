@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloform.css">
+    <script src="jsform.js"></script>
+    <title>FormTable</title>
+</head>
+    <h1>SENAC HUB ACADEMY</h1>
+        <p>Fabrica de Software</p>
+<body>
+    <div class="formulario">
+        <form class="form">
+            <div class="corpoform" >
+                <div class="campo1">
+                    <label class="codigo" id="codigo" name="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="Código" required="required" readonly>
+                </div>
+                <div class="campo2">
+                    <label class="nome" id="nome" name="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Débora Amaral" required="required">
+                </div>
+                <div class="campo3">
+                    <label class="email" id="email" name="email">E-Mail</label>
+                    <input type="text" id="email" name="email" placeholder="debora@gmail.com" required="required">
+                </div>
+                <div class="campo4">
+                    <label class="sexo" id="sexo" name="sexo">Sexo</label>
+                    <select name="sexo" id="sexo" name="sexo">
+                        <option class="sexo-option" value="Feminino">Feminino</option>
+                        <option class="sexo-option" value="Masculino">Masculino</option>
+                        <option class="sexo-option" value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="campo5">
+                    <label class="profissao" id="profissao" name="profissao">Profissão</label>
+                    <input type="text" id="profissao" name="profissao" placeholder="Psicóloga" required="required">
+                </div class="botao"> <!--mesmo nome do id-->
+                    <button onclick="cadastrar(nome.value, email.value, sexo.value, profissao.value)">I N S E R I R</button>
+            </div>
+        </form>
+    </div>
+    <div class="gridform">
+        <table class="tabelaform">
+            <thead>
+                <tr>
+                    <th scope="col">CÓDIGO</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">E-MAIL</th>
+                    <th scope="col">SEXO</th>
+                    <th scope="col">PROFISSÃO</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+</html>
